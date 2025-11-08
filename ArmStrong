@@ -1,0 +1,28 @@
+// Check Whether Armstrong number or not
+
+package GithubUploadMathProblem;
+
+import java.util.Scanner;
+
+public class ArmStrongNum {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number :");
+		int n = sc.nextInt();
+		int digits = Integer.toString(n).length();
+		int sum = 0;
+		int c = n;
+		while(n>0) {
+			int r = n%10;
+			sum = sum + (int)Math.pow(r, digits);
+			n = n/10;
+		}
+		if(c == sum) {
+			System.out.println("ArmStrong Number");
+		}else {
+			System.out.println("Not ArmStrong Number");
+		}
+	}
+
+}
