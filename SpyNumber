@@ -1,0 +1,28 @@
+//Check whether spy number or not
+
+package GithubUploadMathProblem;
+
+import java.util.Scanner;
+
+public class SpyNumber {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number :");
+		int n = sc.nextInt();
+		int fact =1;
+		int sum = 0;
+		while(n>0) {
+			int r = n%10;
+			sum = sum +r;
+			fact = fact *r;
+			n = n/10;
+		}
+		if(sum == fact) {
+			System.out.println("Spy Number");
+		}else {
+			System.out.println("Not Spy Number");
+		}
+	}
+
+}
