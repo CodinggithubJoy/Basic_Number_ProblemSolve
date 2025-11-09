@@ -1,0 +1,25 @@
+// Write a program to Swapping without third variable 
+
+package GithubUploadMathProblem;
+
+import java.util.Scanner;
+
+public class SwapWithoutThird {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number :");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println("before swaping number is: " +a);
+		System.out.println("Before swaping number is :" +b);
+		
+		a = a+b;
+		b = a-b;
+		a = a-b;
+		System.out.println("After swaping number is :" +a);
+		System.out.println("After swaping number is :" +b);
+
+	}
+
+}
